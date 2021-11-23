@@ -109,8 +109,9 @@ function draw(){
         trex.changeAnimation("collied",trexCollided);
         gameOver.visible = true;
         restart.visible = true;
-        if(mousePressedOver(restart)){
+        if(touches.lenght>0||mousePressedOver(restart)){
           reset();
+          touches[];
         }
        }
       //ingresa la posición y del Trex
